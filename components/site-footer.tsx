@@ -10,7 +10,7 @@ export function SiteFooter() {
           href="https://TheAllBlueFishing.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 font-medium text-primary-foreground transition-opacity hover:opacity-90"
+          className="inline-flex items-center gap-2 rounded-md bg-coral px-6 py-3 font-bold text-coral-foreground transition-opacity hover:opacity-90"
         >
           TheAllBlueFishing.com
           <ArrowUpRight className="size-4" aria-hidden="true" />

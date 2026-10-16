@@ -20,7 +20,10 @@ export function MakerSection() {
         />
       </div>
       <div className="flex flex-col gap-6">
-        <p className="text-sm font-medium uppercase tracking-widest text-primary">The Maker</p>
+        <p className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-primary">
+            <span aria-hidden="true" className="h-1 w-8 rounded-full bg-coral" />
+            The Maker
+          </p>
         <h2 className="text-balance font-serif text-4xl font-semibold leading-tight md:text-5xl">Juan Resendez</h2>
         <p className="text-pretty text-lg leading-relaxed text-muted-foreground">
           A veteran from South Texas who loves to fish. Juan wants every lure he makes to reflect that — a veteran, an
@@ -29,7 +32,7 @@ export function MakerSection() {
         <ul className="mt-2 flex flex-col gap-5">
           {facts.map(({ icon: Icon, title, text }) => (
             <li key={title} className="flex gap-4">
-              <span className="flex size-10 shrink-0 items-center justify-center rounded-md bg-accent text-primary">
+              <span className="flex size-10 shrink-0 items-center justify-center rounded-md bg-coral/15 text-coral">
                 <Icon className="size-5" aria-hidden="true" />
               </span>
               <div>

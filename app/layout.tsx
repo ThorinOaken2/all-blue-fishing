@@ -1,10 +1,14 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Fraunces, Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-fraunces' })
+const satoshi = localFont({
+  src: './fonts/Satoshi-Variable.woff2',
+  weight: '300 900',
+  variable: '--font-satoshi',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'The All Blue Fishing | 3D Printed Lures by Juan Resendez',
@@ -32,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
+    <html lang="en" className={satoshi.variable}>
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

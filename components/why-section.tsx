@@ -1,8 +1,11 @@
 export function WhySection() {
   return (
-    <section id="why" className="border-y border-border bg-secondary">
+    <section id="why" className="border-y border-border bg-muted">
       <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 px-6 py-20 text-center md:py-28">
-        <p className="text-sm font-medium uppercase tracking-widest text-primary">Why It Matters</p>
+        <p className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-primary">
+            <span aria-hidden="true" className="h-1 w-8 rounded-full bg-coral" />
+            Why It Matters
+          </p>
         <h2 className="text-balance font-serif text-4xl font-semibold leading-tight md:text-5xl">
           More than a lure — a look inside the craft
         </h2>

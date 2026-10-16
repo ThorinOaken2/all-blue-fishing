@@ -22,7 +22,7 @@ export function SiteHeader() {
           href="https://TheAllBlueFishing.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+          className="rounded-md bg-coral px-4 py-2 text-sm font-bold text-coral-foreground transition-opacity hover:opacity-90"
         >
           Visit the Shop
         </a>

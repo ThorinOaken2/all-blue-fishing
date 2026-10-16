@@ -4,9 +4,13 @@ export function Hero() {
   return (
     <section id="top" className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:py-24">
       <div className="flex flex-col gap-6">
-        <p className="text-sm font-medium uppercase tracking-widest text-primary">3D Printed Fishing Lures</p>
-        <h1 className="text-balance font-serif text-5xl font-semibold leading-tight tracking-tight md:text-6xl">
-          Where all the seas meet.
+        <p className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-primary">
+          <span aria-hidden="true" className="h-1 w-8 rounded-full bg-coral" />
+          3D Printed Fishing Lures
+        </p>
+        <h1 className="text-balance text-5xl font-black leading-[1.05] tracking-tight md:text-6xl">
+          The Ultimate Paradise for Every{' '}
+          <span className="text-primary underline decoration-coral decoration-4 underline-offset-8">True Angler.</span>
         </h1>
         <p className="max-w-md text-pretty text-lg leading-relaxed text-muted-foreground">
           The All Blue Fishing is a lure business by Juan Resendez — a veteran and angler from South Texas who makes
@@ -17,13 +21,13 @@ export function Hero() {
             href="https://TheAllBlueFishing.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-md bg-primary px-6 py-3 font-medium text-primary-foreground transition-opacity hover:opacity-90"
+            className="rounded-md bg-coral px-6 py-3 font-bold text-coral-foreground transition-opacity hover:opacity-90"
           >
             Shop the Lures
           </a>
           <a
             href="#story"
-            className="rounded-md border border-primary px-6 py-3 font-medium text-primary transition-colors hover:bg-accent"
+            className="rounded-md border border-primary px-6 py-3 font-bold text-primary transition-colors hover:bg-accent"
           >
             Read the Story
           </a>

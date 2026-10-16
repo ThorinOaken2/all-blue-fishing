@@ -3,7 +3,10 @@ export function StorySection() {
     <section id="story" className="bg-primary text-primary-foreground">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1fr_1.4fr] md:py-28">
         <div>
-          <p className="text-sm font-medium uppercase tracking-widest text-primary-foreground/70">The Story</p>
+          <p className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-primary-foreground/80">
+              <span aria-hidden="true" className="h-1 w-8 rounded-full bg-coral" />
+              The Story
+            </p>
           <h2 className="mt-4 text-balance font-serif text-4xl font-semibold leading-tight md:text-5xl">
             The legend of the All Blue
           </h2>
