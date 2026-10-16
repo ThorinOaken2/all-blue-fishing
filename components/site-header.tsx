@@ -1,3 +1,5 @@
+import { SocialIcons } from './social-links'
+
 const links = [
   { href: '#story', label: 'The Story' },
   { href: '#maker', label: 'The Maker' },
@@ -18,14 +20,19 @@ export function SiteHeader() {
             </a>
           ))}
         </nav>
-        <a
-          href="https://TheAllBlueFishing.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-md bg-coral px-4 py-2 text-sm font-bold text-coral-foreground transition-opacity hover:opacity-90"
-        >
-          Visit the Shop
-        </a>
+        <div className="flex items-center gap-3">
+          <div className="hidden lg:block">
+            <SocialIcons />
+          </div>
+          <a
+            href="https://TheAllBlueFishing.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-md bg-coral px-4 py-2 text-sm font-bold text-coral-foreground transition-opacity hover:opacity-90"
+          >
+            Visit the Shop
+          </a>
+        </div>
       </div>
     </header>
   )

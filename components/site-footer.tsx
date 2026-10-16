@@ -1,4 +1,5 @@
 import { ArrowUpRight } from 'lucide-react'
+import { SocialLinks } from './social-links'
 
 export function SiteFooter() {
   return (
@@ -15,6 +16,10 @@ export function SiteFooter() {
           TheAllBlueFishing.com
           <ArrowUpRight className="size-4" aria-hidden="true" />
         </a>
+        <div className="mt-4 flex flex-col items-center gap-3">
+          <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Follow the journey</p>
+          <SocialLinks />
+        </div>
       </div>
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 py-6 text-sm text-muted-foreground md:flex-row">
